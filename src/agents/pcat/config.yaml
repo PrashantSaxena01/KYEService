@@ -1,0 +1,7 @@
+name: pcat
+description: Product catalog agent
+tools:
+  - pcat_search
+workflows:
+  - default
+parameters: {}

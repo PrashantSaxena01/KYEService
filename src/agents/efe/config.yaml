@@ -1,0 +1,7 @@
+name: efe
+description: EFE agent
+tools:
+  - efe_search
+workflows:
+  - default
+parameters: {}
