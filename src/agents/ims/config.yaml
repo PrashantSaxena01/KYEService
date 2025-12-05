@@ -1,0 +1,7 @@
+name: ims
+description: Inventory management agent
+tools:
+  - ims_search
+workflows:
+  - default
+parameters: {}

@@ -1,0 +1,28 @@
+app:
+  name: KYEService
+  version: 0.1.0
+  host: ${APP_HOST:-0.0.0.0}
+  port: ${APP_PORT:-8000}
+  log_level: ${LOG_LEVEL:-INFO}
+
+auth:
+  tenant_id: ${AZURE_AD_TENANT_ID:-}
+  client_id: ${AZURE_AD_CLIENT_ID:-}
+  allowed_audience: ${AZURE_AD_ALLOWED_AUDIENCE:-}
+  authority: ${AZURE_AD_AUTHORITY:-https://login.microsoftonline.com/${AZURE_AD_TENANT_ID}}
+
+services:
+  azure_ai_search:
+    endpoint: ${AZURE_AI_SEARCH_ENDPOINT:-https://example.search.windows.net}
+    api_key: ${AZURE_AI_SEARCH_KEY:-changeme}
+    indexes:
+      pcat: ${PCAT_SEARCH_INDEX:-pcat-index}
+      ims: ${IMS_SEARCH_INDEX:-ims-index}
+      fieldaid: ${FIELDAID_SEARCH_INDEX:-fieldaid-index}
+      efe: ${EFE_SEARCH_INDEX:-efe-index}
+      neo: ${NEO_SEARCH_INDEX:-neo-index}
+      tbd: ${TBD_SEARCH_INDEX:-tbd-index}
+  vector_store:
+    connection_string: ${VECTOR_STORE_CONNECTION_STRING:-changeme}
+  telemetry:
+    connection_string: ${TELEMETRY_CONNECTION_STRING:-changeme}

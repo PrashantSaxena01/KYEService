@@ -1,0 +1,7 @@
+name: neo
+description: NEO agent
+tools:
+  - neo_search
+workflows:
+  - default
+parameters: {}

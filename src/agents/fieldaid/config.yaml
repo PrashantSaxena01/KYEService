@@ -1,0 +1,7 @@
+name: fieldaid
+description: Field assistance agent
+tools:
+  - fieldaid_search
+workflows:
+  - default
+parameters: {}

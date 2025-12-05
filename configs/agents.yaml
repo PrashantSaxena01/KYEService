@@ -1,0 +1,19 @@
+agents:
+  pcat:
+    class_path: src.agents.pcat.pcat_agent:PCATAgent
+    workflow: src.agents.pcat.workflows.pcat_default_workflow:PCATDefaultWorkflow
+  ims:
+    class_path: src.agents.ims.ims_agent:IMAgent
+    workflow: src.agents.ims.workflows.ims_default_workflow:IMSDefaultWorkflow
+  fieldaid:
+    class_path: src.agents.fieldaid.fieldaid_agent:FieldAidAgent
+    workflow: src.agents.fieldaid.workflows.fieldaid_default_workflow:FieldAidDefaultWorkflow
+  efe:
+    class_path: src.agents.efe.efe_agent:EFEAgent
+    workflow: src.agents.efe.workflows.efe_default_workflow:EFEDefaultWorkflow
+  neo:
+    class_path: src.agents.neo.neo_agent:NEOAgent
+    workflow: src.agents.neo.workflows.neo_default_workflow:NEODefaultWorkflow
+  tbd:
+    class_path: src.agents.tbd.tbd_agent:TBDAgent
+    workflow: src.agents.tbd.workflows.tbd_default_workflow:TBDDefaultWorkflow

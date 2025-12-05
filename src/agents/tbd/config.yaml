@@ -1,0 +1,7 @@
+name: tbd
+description: Placeholder agent
+tools:
+  - tbd_search
+workflows:
+  - default
+parameters: {}

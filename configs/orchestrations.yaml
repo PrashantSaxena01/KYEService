@@ -1,0 +1,7 @@
+orchestrations:
+  multi_agent_orchestrator:
+    class_path: src.orchestrations.multi_agent_orchestrator:MultiAgentOrchestrator
+    routing_policy: src.orchestrations.routing.routing_policy:RoutingPolicy
+    workflows:
+      - src.orchestrations.workflows.cross_agent_workflow:CrossAgentWorkflow
+      - src.orchestrations.workflows.task_assignment:TaskAssignmentWorkflow

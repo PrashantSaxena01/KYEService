@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kyeservice"
+version = "0.1.0"
+description = "Multi-agent service skeleton"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "Your Name" }]
+keywords = ["agents", "fastapi", "orchestration"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0", "ruff>=0.6.0", "mypy>=1.10.0"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
